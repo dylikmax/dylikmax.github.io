@@ -1,0 +1,926 @@
+@font-face {
+  font-family: "Century Gothic";
+  src: url(fonts/centurygothic.ttf);
+}
+
+@font-face {
+  font-family: "Century Gothic Bold";
+  src: url(fonts/centurygothic_bold.ttf);
+}
+
+* {
+  font-family: "Century Gothic Bold";
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #fff;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  height: 11vw;
+  display: flex;
+  align-items: center;
+  background-image: url(img/header_background.png);
+  background-size: 100%;
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 41.6vw auto;
+}
+
+.dosaaf-logo {
+  margin-left: 2.5vw;
+  width: 21.5vw;
+}
+
+.media__icon {
+  width: 2.9vw;
+  background-color: #fff;
+  border-radius: 0.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 12.95vw);
+  grid-template-rows: 2.9vw 2.7vw;
+  column-gap: 5.8vw;
+  row-gap: 1.1vw;
+}
+
+.media {
+  grid-column-start: 3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 186, 115, 1),
+    rgba(244, 162, 78, 1)
+  );
+  border-radius: 0.5vw;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7vw;
+}
+
+.logo {
+  height: 2.3vw;
+  width: 2.3vw;
+}
+
+.button-text {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 186, 115, 1),
+    rgba(244, 162, 78, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+}
+
+.white-button {
+  background: #fff;
+}
+
+.screen1 {
+  background-image: url(img/screen1_background.png);
+  background-size: 100vw;
+  height: 62.767vw;
+  padding-left: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.screen1__container {
+  display: grid;
+  grid-template-rows: auto auto 23.5vw;
+  width: 60vw;
+}
+
+h1 {
+  font-size: 5vw;
+  line-height: 1;
+  margin: 0;
+}
+
+.sub-tagline {
+  margin-top: 0.9vw;
+  font-family: "Century Gothic";
+  width: 50vw;
+  font-size: 2.09vw;
+}
+
+.action-button {
+  align-self: end;
+  width: 30vw;
+  height: 8.5vw;
+  font-size: 2.7vw;
+}
+
+.screen2 {
+  background-image: url(img/screen2_background.png);
+  background-size: 100vw;
+  height: 62.302vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen2__container {
+  display: grid;
+  text-align: center;
+  gap: 1.5vw;
+  width: 80vw;
+}
+
+.adv {
+  display: flex;
+  gap: 2.7vw;
+}
+
+.desc-left {
+  text-align: left;
+}
+
+.desc-right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.orng-text {
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 186, 115, 1),
+    rgba(244, 162, 78, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  font-size: 6.3vw;
+}
+
+h2 {
+  font-size: 5vw;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 3.65vw;
+  margin: 0;
+}
+
+.adv__text-info p {
+  font-size: 1.5vw;
+  font-family: "Century Gothic";
+  width: 35vw;
+}
+
+.screen3 {
+  background-image: url(img/screen3_background.png);
+  background-size: 100vw;
+  height: 62.9vw;
+  padding-left: 10vw;
+  display: flex;
+  align-items: center;
+}
+
+.screen3__container {
+  /* padding: 12vw 11vw 12.6vw 10vw; */
+  display: grid;
+  grid-template-rows: auto 27vw;
+  width: 78vw;
+}
+
+.adv__icon {
+  width: 21vw;
+}
+
+.screen4 {
+  background-image: url(img/screen4_background.png);
+  background-size: 100vw;
+  height: 72.979vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen4__container {
+  display: grid;
+  row-gap: 2.6vw;
+  width: 80vw;
+}
+
+.adv-center {
+  display: grid;
+  grid-template-columns: 35vw auto;
+  row-gap: 2.7vw;
+  grid-column-gap: 1.75vw;
+}
+
+.adv-center__description {
+  font-family: "Century Gothic";
+  font-size: 1.58vw;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.orng-sub-text {
+  font-family: "Century Gothic Bold";
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 186, 115, 1),
+    rgba(244, 162, 78, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  font-size: 3.14vw;
+}
+
+.adv-center__icon {
+  width: 34.2vw;
+  height: auto;
+}
+
+.screen5 {
+  background-image: url(img/screen5_background.png);
+  background-size: 100vw;
+  height: 73.8vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.screen5__container {
+  width: 80vw;
+  display: grid;
+  row-gap: 6vw;
+}
+
+.review {
+  background-color: #fff;
+  border-radius: 1vw;
+  display: flex;
+  padding: 0.7vw;
+  gap: 1.1vw;
+}
+
+.review__date {
+  font-size: 1.6vw;
+}
+
+.review__description {
+  color: black;
+  font-size: 1.55vw;
+  font-family: "Century Gothic";
+  margin-top: 0.5vw;
+  line-height: 100%;
+}
+
+.review__avatar {
+  width: 10vw;
+  height: 10vw;
+}
+
+.review__name {
+  font-family: "Century Gothic Bold";
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 186, 115, 1),
+    rgba(244, 162, 78, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  font-size: 2.5vw;
+  margin-top: -0.8vw;
+}
+
+.screen6 {
+  background-image: url(img/screen6_background.png);
+  background-size: 100vw;
+  height: 62.767vw;
+  display: flex;
+  align-items: center;
+}
+
+.screen6__container {
+  padding-left: 10vw;
+  display: grid;
+  grid-template-rows: auto auto 25vw;
+}
+
+footer {
+  background-image: url(img/footer_background.png);
+  background-size: 100vw;
+  height: 17.833vw;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.footer__container {
+  display: grid;
+  row-gap: 5vw;
+}
+
+.footer__buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 12.95vw);
+  grid-template-rows: 2.9vw 2.7vw;
+  column-gap: 5.8vw;
+  row-gap: 1.1vw;
+}
+
+.footer__media {
+  grid-column-start: 1;
+}
+
+.footer__nav {
+  grid-row-start: 2;
+}
+
+.on-top {
+  gap: 0.7vw;
+}
+
+.on-top__adapt {
+  display: none;
+}
+
+.footer__copyright {
+  color: #b6b6b6;
+  font-family: "Century Gothic";
+  font-size: 1.7vw;
+}
+
+.arrow {
+  width: 2vw;
+  height: auto;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.burger.active {
+  position: fixed;
+  right: 2vw;
+}
+
+.side-menu {
+  display: none;
+  transition: 0.3s ease-out;
+}
+
+.side-menu.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 23vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 60vw;
+  height: 100vh;
+  z-index: 2;
+  background-image: url(img/burger_background.png);
+  background-size: 160%;
+}
+
+.side-menu {
+  font-size: 16px;
+  flex-direction: column;
+  justify-content: start;
+  gap: 8%;
+  height: 70%;
+}
+
+.side-menu__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+  width: 50vw;
+}
+
+.side-menu .company-logo {
+  width: 35px;
+  height: 35px;
+}
+
+.side-menu__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.side-menu__media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.side-menu__nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 186, 115, 1),
+    rgba(244, 162, 78, 1)
+  );
+  border-radius: 1vw;
+  color: #fff;
+  text-decoration: none;
+  font-size: max(12px, 3vw);
+  height: 7vw;
+}
+
+.side-menu__nav-button.white-button {
+  background: #fff;
+}
+
+.side-menu__media-icon {
+  width: 7vw;
+  padding: 0.7vw;
+  background-color: #fff;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#burger_icon {
+  width: clamp(35px, 8vw, 45px);
+}
+
+.visible {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  header {
+    height: 100px;
+    background-position: center;
+    background-size: 120%;
+  }
+
+  .header__container {
+    grid-template-columns: auto 460px;
+    width: 100vw;
+  }
+
+  .dosaaf-logo {
+    margin-left: 20px;
+    width: 200px;
+  }
+
+  .media__icon {
+    width: 25px;
+    border-radius: 5px;
+  }
+
+  .header__buttons {
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: 25px 25px;
+    column-gap: 40px;
+    row-gap: 10px;
+  }
+
+  .nav-button {
+    border-radius: 5px;
+    font-size: 15px;
+  }
+
+  .logo {
+    height: 20px;
+    width: 20px;
+  }
+
+  .screen1 {
+    background-size: 115%;
+    background-position: center;
+    height: 500px;
+    padding-left: 50px;
+  }
+
+  .screen1__container {
+    grid-template-rows: auto auto 200px;
+    width: 600px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+
+  .sub-tagline {
+    margin-top: 10px;
+    width: 400px;
+    font-size: 20px;
+  }
+
+  .action-button {
+    width: 270px;
+    height: 70px;
+    font-size: 22px;
+  }
+
+  .screen2 {
+    background-size: 135%;
+    background-position: center;
+    height: 580px;
+  }
+
+  .screen2__container {
+    gap: 20px;
+    width: 600px;
+  }
+
+  .adv {
+    gap: 30px;
+  }
+
+  .orng-text {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  .adv__text-info p {
+    font-size: 16px;
+    width: 380px;
+  }
+
+  .adv__icon {
+    width: 190px;
+  }
+
+  .screen3 {
+    background-position: center;
+    background-size: 115%;
+    height: 500px;
+    padding-left: 50px;
+  }
+
+  .screen3__container {
+    grid-template-rows: auto 200px;
+    width: 600px;
+  }
+
+  .screen4 {
+    background-position: center;
+    background-size: 130%;
+    height: 650px;
+  }
+
+  .screen4__container {
+    row-gap: 20px;
+    width: 580px;
+  }
+
+  .adv-center {
+    grid-template-columns: 200px auto;
+    row-gap: 15px;
+    grid-column-gap: 10px;
+  }
+
+  .adv-center__description {
+    font-size: 16px;
+  }
+
+  .orng-sub-text {
+    font-size: 20px;
+  }
+
+  .adv-center__icon {
+    width: 200px;
+  }
+
+  .screen5 {
+    background-size: 115%;
+    height: 680px;
+  }
+
+  .screen5__container {
+    width: 580px;
+    row-gap: 35px;
+  }
+
+  .review {
+    border-radius: 5px;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .review__date {
+    font-size: 13px;
+  }
+
+  .review__description {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  .review__avatar {
+    width: 90px;
+    height: 90px;
+  }
+
+  .review__name {
+    font-size: 22px;
+    margin-top: -5px;
+  }
+
+  .screen6 {
+    background-position: center;
+    background-size: 115%;
+    height: 500px;
+  }
+
+  .screen6__container {
+    padding-left: 50px;
+    grid-template-rows: auto auto 170px;
+    width: 700px;
+  }
+
+  footer {
+    background-position: center;
+    background-size: 135%;
+    height: 150px;
+  }
+
+  .footer__container {
+    row-gap: 50px;
+  }
+
+  .footer__buttons {
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: 25px 25px;
+    column-gap: 40px;
+    row-gap: 10px;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+  }
+
+  .arrow {
+    width: 20px;
+    height: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  header {
+    height: 70px;
+    background-position: center center;
+    background-size: auto 100%;
+    justify-content: center;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    align-items: center;
+  }
+
+  .dosaaf-logo {
+    margin-left: 0;
+    width: 150px;
+  }
+
+  .header__buttons {
+    display: none;
+  }
+
+  .screen1 {
+    background-position: center center;
+    background-size: auto 110%;
+    height: max(60vw, 300px);
+    padding-left: 30px;
+  }
+
+  .screen1__container {
+    grid-template-rows: auto auto 20vw;
+    width: 90vw;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  .sub-tagline {
+    margin-top: 3vw;
+    width: 60vw;
+    font-size: max(3vw, 11px);
+  }
+
+  .action-button {
+    width: 35vw;
+    height: 10vw;
+    font-size: max(3vw, 11px);
+  }
+
+  .screen2 {
+    background-position: center center;
+    background-size: auto 100%;
+    height: max(95vw, 450px);
+  }
+
+  .screen2__container {
+    gap: 20px;
+    width: 90vw;
+  }
+
+  .orng-text {
+    font-size: 8vw;
+  }
+
+  h2 {
+    font-size: 6vw;
+  }
+
+  h3 {
+    font-size: 5vw;
+  }
+
+  .adv__text-info p {
+    font-size: clamp(11px, 3vw, 16px);
+    width: 50vw;
+  }
+
+  .adv__icon {
+    width: 25vw;
+    height: 15vw;
+  }
+
+  .screen3 {
+    background-position: center center;
+    background-size: auto 110%;
+    height: max(60vw, 300px);
+    padding-left: 30px;
+  }
+
+  .screen3__container {
+    grid-template-rows: auto 30vw;
+    width: 90vw;
+  }
+
+  .screen4 {
+    background-position: center center;
+    background-size: auto 100%;
+    height: max(105vw, 450px);
+  }
+
+  .screen4__container {
+    row-gap: 2vw;
+    width: 90vw;
+  }
+
+  .adv-center {
+    grid-template-columns: 30vw auto;
+    row-gap: 1vw;
+    grid-column-gap: 10px;
+  }
+
+  .adv-center__description {
+    font-size: clamp(11px, 3vw, 16px);
+  }
+
+  .orng-sub-text {
+    font-size: clamp(13px, 4vw, 20px);
+  }
+
+  .adv-center__icon {
+    width: 30vw;
+  }
+
+  .screen5 {
+    background-position: center center;
+    background-size: auto 100%;
+    height: max(105vw, 450px);
+  }
+
+  .screen5__container {
+    width: 90vw;
+    row-gap: 2vw;
+  }
+
+  .review {
+    border-radius: 5px;
+    padding: 10px;
+    gap: 6px;
+  }
+
+  .review__date {
+    font-size: clamp(11px, 3vw, 13px);
+  }
+
+  .review__description {
+    font-size: clamp(11px, 2.5vw, 16px);
+    margin-top: 1vw;
+  }
+
+  .review__avatar {
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .review__name {
+    font-size: clamp(14px, 4vw, 22px);
+    margin-top: -0.6vw;
+  }
+
+  .screen6 {
+    background-position: center center;
+    background-size: auto 110%;
+    height: max(60vw, 300px);
+    padding-left: 30px;
+  }
+
+  .screen6__container {
+    grid-template-rows: auto auto 30vw;
+    width: 90vw;
+    padding-left: 0;
+  }
+
+  footer {
+    background-position: center;
+    background-size: 135%;
+    height: 20vw;
+  }
+
+  .on-top__adapt {
+    display: flex;
+    gap: 1vw;
+    font-size: max(4vw, 12px);
+    width: 30vw;
+  }
+
+  .footer__container {
+    row-gap: 4vw;
+  }
+
+  .footer__buttons {
+    display: none;
+  }
+
+  .footer__copyright {
+    font-size: max(4vw, 12px);
+  }
+
+  .footer__nav {
+    grid-row-start: 1;
+  }
+
+  .arrow {
+    width: 4vw;
+  }
+
+  .burger {
+    display: flex !important;
+  }
+}
