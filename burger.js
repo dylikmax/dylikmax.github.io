@@ -27,5 +27,19 @@ window.addEventListener("resize", () => {
   if (window.innerWidth > 700) {
     burger.classList.remove("active");
     sideMenu.classList.remove("active");
+    if (isActive) {
+      burger_icon.src = "img/burger_icon.svg";
+      overlay.classList.remove("visible");
+      isActive = !isActive;
+    }
   }
 });
+
+const navButtons = document.querySelectorAll(".side-menu__nav-button");
+navButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    burger_icon.src = "img/burger_icon.svg";
+    overlay.classList.remove("visible");
+    isActive = !isActive;
+  })
+})
